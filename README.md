@@ -13,6 +13,7 @@ Aspects to take into account:
 1. Due to the estimated time of the technical test the API has a very basic structure and does not perform full validations, with more time more technical details of the API can be completed in more depth. 
 2. The aim was to propose a clean architecture and maintainable, decoupled code.
 4. Because this is a test done in about two hours and it is not enough time to show great knowledge in my github there are some repositories where you can extend my knowledge and my way of programming in case you consider it appropriate to examine it after reviewing the technical test.
+5. Another thing I wanted to highlight is that I have performed unit tests at the API level, I could also perform integration tests and tests on the services of the console application but I do not have so much time for it because I think I have raised a fairly complete architecture and testing everything in a short time is complicated.
 
 ## Instructions for running the technical test ##
 
@@ -22,12 +23,13 @@ Aspects to take into account:
 
 >  **Update-Database -context GameContext**
 
-
-
 >  **Update-Database -context BoardContext**
 
-there are two database contexts as I have applied the Bounded Context pattern in the use of entity framework, it is about two contexts on the same database.Keep in mind that if the database user in the connection string does not have permissions to create a database, this process has to be done manually, so you would have to create a database and assign permissions to that user.
-4. Finally at the time of executing the technical test from visual studio you have to take into account that you have to put two startup projects the API and the console application whose name is the following: SnakesAndLaddersGame both projects are inside the virtual folder of visual studio App.
+(there are two database contexts as I have applied the Bounded Context pattern in the use of entity framework, it is about two contexts on the same database.Keep in mind that if the database user in the connection string does not have permissions to create a database, this process has to be done manually, so you would have to create a database and assign permissions to that user).
+
+Once the database structure has been created, it is necessary to execute the following script with configuration data which is in the following path: /DatabaseScripts/Post.Deployment.sql
+
+Finally at the time of executing the technical test from visual studio you have to take into account that you have to put two startup projects the API and the console application whose name is the following: SnakesAndLaddersGame both projects are inside the virtual folder of visual studio App.
 
 **If you have any questions or problems about the test execution or the test code, please contact me.**
 
