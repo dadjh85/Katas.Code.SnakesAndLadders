@@ -27,7 +27,7 @@ Aspects to take into account:
 >  **Update-Database -context BoardContext**
 
 there are two database contexts as I have applied the Bounded Context pattern in the use of entity framework, it is about two contexts on the same database.Keep in mind that if the database user in the connection string does not have permissions to create a database, this process has to be done manually, so you would have to create a database and assign permissions to that user.
-5. Finally at the time of executing the technical test from visual studio you have to take into account that you have to put two startup projects the API and the console application whose name is the following: SnakesAndLaddersGame both projects are inside the virtual folder of visual studio App.
+4. Finally at the time of executing the technical test from visual studio you have to take into account that you have to put two startup projects the API and the console application whose name is the following: SnakesAndLaddersGame both projects are inside the virtual folder of visual studio App.
 
 **If you have any questions or problems about the test execution or the test code, please contact me.**
 
